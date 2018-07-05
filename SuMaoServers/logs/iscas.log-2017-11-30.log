@@ -1,0 +1,26 @@
+[INFO ] 2017-11-30 11:32:09,948   main - main start run================
+[INFO ] 2017-11-30 11:32:11,740 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2017-11-30 11:32:12,079   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2017-11-30 11:32:12,750   main - {dataSource-1} inited
+[INFO ] 2017-11-30 11:32:14,048   main - 开始实例化缓存对象================
+[INFO ] 2017-11-30 11:32:14,510   main - method type : query, source sql : test.select.list:SELECT * FROM sys_test t where 1=1 order by id desc
+run time is :27ms
+[INFO ] 2017-11-30 11:32:14,518   main - SocketServerUtil init start................
+
+[INFO ] 2017-11-30 11:32:48,818   main - main start run================
+[INFO ] 2017-11-30 11:32:50,206 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2017-11-30 11:32:50,413   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2017-11-30 11:32:51,041   main - {dataSource-1} inited
+[INFO ] 2017-11-30 11:32:51,635   main - 开始实例化缓存对象================
+[INFO ] 2017-11-30 11:33:14,458   main - {dataSource-1} closed
+[INFO ] 2017-11-30 11:37:32,389   main - main start run================
+[INFO ] 2017-11-30 11:37:33,802 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2017-11-30 11:37:34,015   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2017-11-30 11:37:34,639   main - {dataSource-1} inited
+[INFO ] 2017-11-30 11:37:35,302   main - 开始实例化缓存对象================
+[INFO ] 2017-11-30 11:37:35,575   main - {dataSource-1} closed
+[INFO ] 2017-11-30 11:48:10,926   main - main start run================
+[INFO ] 2017-11-30 11:48:12,329 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2017-11-30 11:48:12,563   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2017-11-30 11:48:13,117   main - {dataSource-1} inited
+[INFO ] 2017-11-30 11:48:13,772   main - 开始实例化缓存对象================

@@ -1,0 +1,233 @@
+[INFO ] 2018-01-03 10:48:23,220   main - main start run================
+[INFO ] 2018-01-03 10:48:28,648 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 10:48:29,042   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 10:48:30,494   main - {dataSource-1} inited
+[INFO ] 2018-01-03 10:48:31,186   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 10:49:36,022 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :95ms
+[INFO ] 2018-01-03 10:49:36,138 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:49:36,200 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :73ms
+[INFO ] 2018-01-03 10:49:47,885 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:49:47,890 pool-1-thread-2 - 解析出现异常====================：[Error Code]:MessageNotExist, [Message]:The receipt handle you provided has expired.
+[INFO ] 2018-01-03 10:49:58,319 pool-1-thread-1 - 解析出现异常====================：[Error Code]:MessageNotExist, [Message]:The receipt handle you provided has expired.
+[INFO ] 2018-01-03 10:50:16,839   main - main start run================
+[INFO ] 2018-01-03 10:50:18,287 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 10:50:18,480   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 10:50:19,546   main - {dataSource-1} inited
+[INFO ] 2018-01-03 10:50:20,099   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 10:50:26,683 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :99ms
+[INFO ] 2018-01-03 10:50:26,797 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:50:26,874 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :60ms
+[INFO ] 2018-01-03 10:50:26,910 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :76ms
+[INFO ] 2018-01-03 10:50:26,963 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:50:27,101 pool-1-thread-3 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:50:27,131 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :135ms
+[INFO ] 2018-01-03 10:50:27,291 pool-1-thread-4 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:54:35,559 pool-1-thread-5 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :78ms
+[INFO ] 2018-01-03 10:54:35,574 pool-1-thread-6 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :60ms
+[INFO ] 2018-01-03 10:54:35,662 pool-1-thread-6 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 10:54:35,669 pool-1-thread-5 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 11:01:50,305 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :80ms
+[INFO ] 2018-01-03 11:01:50,420 pool-1-thread-7 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 11:12:28,395 pool-1-thread-8 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :80ms
+[INFO ] 2018-01-03 11:12:28,507 pool-1-thread-8 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 11:19:34,419 pool-1-thread-9 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :76ms
+[INFO ] 2018-01-03 11:19:34,538 pool-1-thread-9 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:22:39,498   main - main start run================
+[INFO ] 2018-01-03 15:22:41,811 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 15:22:42,032   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 15:22:43,355   main - {dataSource-1} inited
+[INFO ] 2018-01-03 15:22:44,174   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 15:22:46,967 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :111ms
+[INFO ] 2018-01-03 15:22:47,058 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:26:07,231 pool-1-thread-2 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'	' ,'	' ,'862991528261883' ,'180103152553' )
+run time is :79ms
+[INFO ] 2018-01-03 15:26:07,231 pool-1-thread-2 - 解析出现异常====================：java.lang.NumberFormatException: null
+[INFO ] 2018-01-03 15:26:50,568 pool-1-thread-3 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'	' ,'	' ,'862991528261883' ,'180103152553' )
+run time is :77ms
+[INFO ] 2018-01-03 15:26:50,569 pool-1-thread-3 - 解析出现异常====================：java.lang.NumberFormatException: null
+[INFO ] 2018-01-03 15:26:55,830 pool-1-thread-4 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'	' ,'	' ,'862991528261883' ,'180103152553' )
+run time is :67ms
+[INFO ] 2018-01-03 15:26:55,831 pool-1-thread-4 - 解析出现异常====================：java.lang.NumberFormatException: null
+[INFO ] 2018-01-03 15:27:28,447 pool-1-thread-5 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'	' ,'	' ,'862991528261883' ,'180103152553' )
+run time is :83ms
+[INFO ] 2018-01-03 15:27:28,447 pool-1-thread-5 - 解析出现异常====================：java.lang.NumberFormatException: null
+[INFO ] 2018-01-03 15:27:59,035 pool-1-thread-6 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'	' ,'	' ,'862991528261883' ,'180103152553' )
+run time is :68ms
+[INFO ] 2018-01-03 15:27:59,036 pool-1-thread-6 - 解析出现异常====================：java.lang.NumberFormatException: null
+[INFO ] 2018-01-03 15:28:30,497   main - main start run================
+[INFO ] 2018-01-03 15:28:31,864 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 15:28:32,330   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 15:28:33,510   main - {dataSource-1} inited
+[INFO ] 2018-01-03 15:28:34,441   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 15:29:01,216 pool-1-thread-1 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'	' ,'	' ,'862991528261883' ,'180103152553' )
+run time is :187ms
+[INFO ] 2018-01-03 15:29:01,217 pool-1-thread-1 - 插入数据成功，DeviceName为：null ,插入的Id 为：8
+[INFO ] 2018-01-03 15:30:32,635 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103153030' WHERE deviceName= 'c86722a4ae32' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :302ms
+[INFO ] 2018-01-03 15:30:32,727 pool-1-thread-2 - 更新成功null ,更新ID：1
+[INFO ] 2018-01-03 15:33:04,332 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :60ms
+[INFO ] 2018-01-03 15:33:04,422 pool-1-thread-3 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:33:04,515 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :62ms
+[INFO ] 2018-01-03 15:33:04,604 pool-1-thread-4 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:38:02,060 pool-1-thread-5 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :75ms
+[INFO ] 2018-01-03 15:38:02,079 pool-1-thread-6 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :60ms
+[INFO ] 2018-01-03 15:38:02,169 pool-1-thread-6 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:38:02,175 pool-1-thread-5 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:38:42,083 pool-1-thread-7 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,cardId ,startTime ) values (id,now() ,'862991528261883' ,'180103153841' )
+run time is :83ms
+[INFO ] 2018-01-03 15:38:42,083 pool-1-thread-7 - 插入数据成功，DeviceName为：null ,插入的Id 为：9
+[INFO ] 2018-01-03 15:38:58,603 pool-1-thread-8 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,cardId ,startTime ) values (id,now() ,'862991528261883' ,'180103153857' )
+run time is :81ms
+[INFO ] 2018-01-03 15:38:58,604 pool-1-thread-8 - 插入数据成功，DeviceName为：null ,插入的Id 为：10
+[INFO ] 2018-01-03 15:41:59,231 pool-1-thread-9 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :75ms
+[INFO ] 2018-01-03 15:41:59,243 pool-1-thread-10 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :60ms
+[INFO ] 2018-01-03 15:41:59,334 pool-1-thread-10 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:41:59,343 pool-1-thread-9 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:45:30,308 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :80ms
+[INFO ] 2018-01-03 15:45:30,424 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:45:30,524 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :64ms
+[INFO ] 2018-01-03 15:45:30,664 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:46:12,097 pool-1-thread-3 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,cardId ,startTime ) values (id,now() ,'862991528261883' ,'180103154610' )
+run time is :74ms
+[INFO ] 2018-01-03 15:46:12,097 pool-1-thread-3 - 插入数据成功，DeviceName为：null ,插入的Id 为：11
+[INFO ] 2018-01-03 15:51:25,743 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :63ms
+[INFO ] 2018-01-03 15:51:25,838 pool-1-thread-4 - 更新失败DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:51:25,928 pool-1-thread-6 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :60ms
+[INFO ] 2018-01-03 15:51:26,027 pool-1-thread-6 - 更新失败DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:51:36,893 pool-1-thread-5 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,cardId ,startTime ) values (id,now() ,'862991528261883' ,'180103155135' )
+run time is :79ms
+[INFO ] 2018-01-03 15:51:36,894 pool-1-thread-5 - 插入数据成功，DeviceName为：null ,插入的Id 为：12
+[INFO ] 2018-01-03 15:54:48,274 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :61ms
+[INFO ] 2018-01-03 15:54:48,314 pool-1-thread-8 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :59ms
+[INFO ] 2018-01-03 15:54:48,370 pool-1-thread-7 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:54:48,410 pool-1-thread-8 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:54:55,066 pool-1-thread-10 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180102164600' )
+run time is :70ms
+[INFO ] 2018-01-03 15:54:55,066 pool-1-thread-10 - 插入数据成功，DeviceName为：null ,插入的Id 为：13
+[INFO ] 2018-01-03 15:57:15,777 pool-1-thread-9 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :59ms
+[INFO ] 2018-01-03 15:57:15,827 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :62ms
+[INFO ] 2018-01-03 15:57:15,878 pool-1-thread-9 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:57:15,933 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-03 15:57:21,296 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103155720' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :58ms
+[INFO ] 2018-01-03 15:57:21,390 pool-1-thread-2 - 更新失败null
+[INFO ] 2018-01-03 15:58:22,730 pool-1-thread-3 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103155821' )
+run time is :72ms
+[INFO ] 2018-01-03 15:58:22,730 pool-1-thread-3 - 插入数据成功，DeviceName为：null ,插入的Id 为：14
+[INFO ] 2018-01-03 15:58:36,767 pool-1-thread-4 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103155835' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :60ms
+[INFO ] 2018-01-03 15:58:36,862 pool-1-thread-4 - 更新失败null
+[INFO ] 2018-01-03 15:58:41,951 pool-1-thread-6 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103155840' )
+run time is :77ms
+[INFO ] 2018-01-03 15:58:41,951 pool-1-thread-6 - 插入数据成功，DeviceName为：null ,插入的Id 为：15
+[INFO ] 2018-01-03 15:58:46,162 pool-1-thread-5 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103155844' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :62ms
+[INFO ] 2018-01-03 15:58:46,261 pool-1-thread-5 - 更新失败null
+[INFO ] 2018-01-03 15:58:55,399 pool-1-thread-7 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103155854' )
+run time is :64ms
+[INFO ] 2018-01-03 15:58:55,399 pool-1-thread-7 - 插入数据成功，DeviceName为：null ,插入的Id 为：16
+[INFO ] 2018-01-03 15:58:58,944 pool-1-thread-8 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103155857' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :59ms
+[INFO ] 2018-01-03 15:58:59,040 pool-1-thread-8 - 更新失败null
+[INFO ] 2018-01-03 15:59:46,888 pool-1-thread-10 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103155945' )
+run time is :73ms
+[INFO ] 2018-01-03 15:59:46,888 pool-1-thread-10 - 插入数据成功，DeviceName为：null ,插入的Id 为：17
+[INFO ] 2018-01-03 15:59:55,186 pool-1-thread-9 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103155954' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :60ms
+[INFO ] 2018-01-03 15:59:55,281 pool-1-thread-9 - 更新失败null
+[INFO ] 2018-01-03 16:14:37,544   main - main start run================
+[INFO ] 2018-01-03 16:14:39,306 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 16:14:39,566   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 16:14:40,890   main - {dataSource-1} inited
+[INFO ] 2018-01-03 16:14:41,447   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 16:15:24,446 pool-1-thread-1 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:15:30,367 pool-1-thread-2 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:15:55,296 pool-1-thread-3 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:16:01,376 pool-1-thread-4 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:16:26,613 pool-1-thread-5 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:16:32,478 pool-1-thread-6 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:16:56,699 pool-1-thread-7 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:17:02,807 pool-1-thread-8 - 解析出现异常====================：java.lang.IllegalArgumentException: Cannot format given Object as a Date
+[INFO ] 2018-01-03 16:18:38,547   main - main start run================
+[INFO ] 2018-01-03 16:18:41,025 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 16:18:41,272   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 16:18:42,440   main - {dataSource-1} inited
+[INFO ] 2018-01-03 16:18:43,253   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 16:18:44,900 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='1975-09-16 20:39:21' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :113ms
+[INFO ] 2018-01-03 16:18:45,019 pool-1-thread-2 - 更新失败null
+[INFO ] 2018-01-03 16:18:45,168 pool-1-thread-1 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'1975-09-16 20:39:21' )
+run time is :88ms
+[INFO ] 2018-01-03 16:18:45,169 pool-1-thread-1 - 插入数据成功，DeviceName为：null ,插入的Id 为：18
+[INFO ] 2018-01-03 16:27:12,599   main - main start run================
+[INFO ] 2018-01-03 16:27:14,256 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 16:27:14,549   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 16:27:15,554   main - {dataSource-1} inited
+[INFO ] 2018-01-03 16:27:16,285   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 16:28:10,132 pool-1-thread-1 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103162808' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :83ms
+[INFO ] 2018-01-03 16:28:10,226 pool-1-thread-1 - 更新成功null ,更新ID：1
+[INFO ] 2018-01-03 16:28:18,559 pool-1-thread-2 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,endTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103162817' )
+run time is :78ms
+[INFO ] 2018-01-03 16:28:18,559 pool-1-thread-2 - 插入数据成功，DeviceName为：null ,插入的Id 为：19
+[INFO ] 2018-01-03 16:28:23,200 pool-1-thread-3 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103162822' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :63ms
+[INFO ] 2018-01-03 16:28:23,296 pool-1-thread-3 - 更新失败null
+[INFO ] 2018-01-03 16:29:07,439 pool-1-thread-4 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,endTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103162905' )
+run time is :74ms
+[INFO ] 2018-01-03 16:29:07,440 pool-1-thread-4 - 插入数据成功，DeviceName为：null ,插入的Id 为：20
+[INFO ] 2018-01-03 16:29:13,895 pool-1-thread-5 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103162912' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :61ms
+[INFO ] 2018-01-03 16:29:13,993 pool-1-thread-5 - 更新失败null
+[INFO ] 2018-01-03 16:30:09,948 pool-1-thread-6 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,endTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103163008' )
+run time is :74ms
+[INFO ] 2018-01-03 16:30:09,948 pool-1-thread-6 - 插入数据成功，DeviceName为：null ,插入的Id 为：21
+[INFO ] 2018-01-03 16:30:14,406 pool-1-thread-7 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103163013' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :63ms
+[INFO ] 2018-01-03 16:30:14,504 pool-1-thread-7 - 更新失败null
+[INFO ] 2018-01-03 16:31:13,964 pool-1-thread-8 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,endTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103163112' )
+run time is :74ms
+[INFO ] 2018-01-03 16:31:13,964 pool-1-thread-8 - 插入数据成功，DeviceName为：null ,插入的Id 为：22
+[INFO ] 2018-01-03 16:31:18,652 pool-1-thread-9 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103163117' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :59ms
+[INFO ] 2018-01-03 16:31:18,750 pool-1-thread-9 - 更新失败null
+[INFO ] 2018-01-03 16:32:47,326 pool-1-thread-10 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,endTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103163246' )
+run time is :68ms
+[INFO ] 2018-01-03 16:32:47,327 pool-1-thread-10 - 插入数据成功，DeviceName为：null ,插入的Id 为：23
+[INFO ] 2018-01-03 16:33:50,740   main - main start run================
+[INFO ] 2018-01-03 16:33:52,026 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-03 16:33:52,550   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-03 16:33:53,535   main - {dataSource-1} inited
+[INFO ] 2018-01-03 16:33:54,181   main - 开始实例化缓存对象================
+[INFO ] 2018-01-03 16:35:45,289 pool-1-thread-1 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'c86722a4ae30' ,'862991528261883' ,'180103163543' )
+run time is :168ms
+[INFO ] 2018-01-03 16:35:45,289 pool-1-thread-1 - 插入数据成功，DeviceName为：null ,插入的Id 为：24
+[INFO ] 2018-01-03 16:35:50,666 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180103163549' WHERE deviceName= 'e87645a4ae30' AND macId = 'c86722a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :61ms
+[INFO ] 2018-01-03 16:35:50,768 pool-1-thread-2 - 更新失败null

@@ -1,0 +1,16 @@
+[INFO ] 2018-07-04 17:07:24,405   main - main start run================
+[INFO ] 2018-07-04 17:07:27,024 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-04 17:07:27,540   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-04 17:07:29,975   main - {dataSource-1} inited
+[INFO ] 2018-07-04 17:07:30,792   main - 开始实例化缓存对象================
+[INFO ] 2018-07-04 17:11:18,639   main - main start run================
+[INFO ] 2018-07-04 17:11:20,124 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-04 17:11:20,492   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-04 17:11:22,156   main - {dataSource-1} inited
+[INFO ] 2018-07-04 17:11:22,729   main - 开始实例化缓存对象================
+[INFO ] 2018-07-04 17:11:23,088   main - Unable to load version information for the running SDK: versioninfo.properties not found on classpath
+[INFO ] 2018-07-04 17:11:52,646   main - main start run================
+[INFO ] 2018-07-04 17:11:53,973 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-04 17:11:54,379   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-04 17:11:56,365   main - {dataSource-1} inited
+[INFO ] 2018-07-04 17:11:56,933   main - 开始实例化缓存对象================

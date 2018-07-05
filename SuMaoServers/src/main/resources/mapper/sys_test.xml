@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<select id="test.selectPageList" parameterType="com.iscas.component.services.test.bean.Test"
+		resultType="com.iscas.component.services.test.bean.Test">
+		SELECT *
+		FROM sys_test t where 1=1
+		<if test="id!=null and id!=''">
+			and t.id=#{id}
+		</if>
+		<if test="username!=null and username!=''">
+			and t.username=#{username}
+		</if>
+		<if test="password!=null and password!=''">
+			and t.password=#{password}
+		</if>
+		<if test="status!=null and status!=''">
+			and t.status= #{status}
+		</if>
+		order by id desc
+		limit #{offset},#{pageSize}
+	</select>
+
+	<select id="test.selectPageCount" parameterType="com.iscas.component.services.test.bean.Test"
+		resultType="com.iscas.component.services.test.bean.Test">
+		select count(*) from (select 1 from sys_test t where 1=1
+		<if test="username!=null and username!=''">
+			and username=#{username}
+		</if>
+		<if test="password!=null and password!=''">
+			and password=#{password}
+		</if>
+		)
+	</select>
+	<select id="test.select" parameterType="com.iscas.component.services.test.bean.Test"
+		resultType="hashMap">
+		SELECT *
+		FROM sys_test t where 1=1
+		<if test="id!=null and id!=''">
+			and t.id=#{id}
+		</if>
+		<if test="username!=null and username!=''">
+			and t.username=#{username}
+		</if>
+		<if test="password!=null and password!=''">
+			and t.password=#{password}
+		</if>
+		<if test="status!=null and status!=''">
+			and t.status= #{status}
+		</if>
+		order by id desc
+	</select>
+
+	<select id="test.select.list" parameterType="com.iscas.component.services.test.bean.Test"
+		resultType="com.iscas.component.services.test.bean.Test">
+		SELECT *
+		FROM sys_test t where 1=1
+		<if test="id!=null and id!=''">
+			and t.id=#{id}
+		</if>
+		<if test="username!=null and username!=''">
+			and t.username=#{username}
+		</if>
+		<if test="password!=null and password!=''">
+			and t.password=#{password}
+		</if>
+		<if test="status!=null and status!=''">
+			and t.status= #{status}
+		</if>
+		order by id desc
+	</select>
+
+	<insert id="test.insert" parameterType="com.iscas.component.services.test.bean.Test"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into sys_test
+		(id
+		<if test="username!=null and username!=''">
+			,username
+		</if>
+		<if test="password!=null and password!=''">
+			,password
+		</if>
+		<if test="status!=null and status!=''">
+			,status
+		</if>
+		)
+		values
+		(id
+		<if test="username !=null and username !=''">
+			,#{username}
+		</if>
+		<if test="password !=null and password !=''">
+			,#{password}
+		</if>
+		<if test="status !=null and status !=''">
+			,#{status}
+		</if>
+		)
+	</insert>
+</mapper>  

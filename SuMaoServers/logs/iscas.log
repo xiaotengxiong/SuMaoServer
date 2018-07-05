@@ -1,0 +1,25 @@
+[INFO ] 2018-07-05 15:30:58,774   main - main start run================
+[INFO ] 2018-07-05 15:31:04,529 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-05 15:31:06,088   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-05 15:31:10,176   main - {dataSource-1} inited
+[INFO ] 2018-07-05 15:31:12,611   main - 开始实例化缓存对象================
+[INFO ] 2018-07-05 15:31:52,983   main - main start run================
+[INFO ] 2018-07-05 15:31:55,843 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-05 15:31:57,957   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-05 15:32:02,019   main - {dataSource-1} inited
+[INFO ] 2018-07-05 15:32:04,079   main - 开始实例化缓存对象================
+[INFO ] 2018-07-05 15:32:49,241   main - main start run================
+[INFO ] 2018-07-05 15:32:52,567 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-05 15:32:53,979   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-05 15:32:57,741   main - {dataSource-1} inited
+[INFO ] 2018-07-05 15:32:59,913   main - 开始实例化缓存对象================
+[INFO ] 2018-07-05 15:34:50,211   main - main start run================
+[INFO ] 2018-07-05 15:34:53,276 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-05 15:34:54,835   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-05 15:34:59,512   main - {dataSource-1} inited
+[INFO ] 2018-07-05 15:35:01,782   main - 开始实例化缓存对象================
+[INFO ] 2018-07-05 15:36:40,477   main - main start run================
+[INFO ] 2018-07-05 15:36:43,164 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-07-05 15:36:44,927   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-07-05 15:36:50,233   main - {dataSource-1} inited
+[INFO ] 2018-07-05 15:36:52,342   main - 开始实例化缓存对象================

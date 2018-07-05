@@ -1,0 +1,12 @@
+[INFO ] 2018-02-01 09:47:45,456   main - main start run================
+[INFO ] 2018-02-01 09:47:48,355 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-02-01 09:47:48,704   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-02-01 09:47:51,120   main - {dataSource-1} inited
+[INFO ] 2018-02-01 09:47:52,207   main - 开始实例化缓存对象================
+[INFO ] 2018-02-01 09:47:52,704   main - {dataSource-1} closed
+[INFO ] 2018-02-01 09:49:23,000   main - main start run================
+[INFO ] 2018-02-01 09:49:24,300 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-02-01 09:49:24,562   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-02-01 09:49:26,214   main - {dataSource-1} inited
+[INFO ] 2018-02-01 09:49:26,734   main - 开始实例化缓存对象================
+[INFO ] 2018-02-01 09:49:27,129   main - main end run================

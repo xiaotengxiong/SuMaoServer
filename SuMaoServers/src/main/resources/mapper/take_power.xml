@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="take_power">
+    <select id="take_power.selectPageList" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+            resultType="com.iscas.component.services.take_power.bean.TakePower">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+        limit #{offset},#{pageSize}
+    </select>
+
+    <select id="take_power.selectPageCount" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+            resultType="com.iscas.component.services.take_power.bean.TakePower">
+        select count(*) from (select 1 from sys_test t where 1=1
+        <if test="username!=null and username!=''">
+            and username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and password=#{password}
+        </if>
+        )
+    </select>
+    <select id="take_power.select" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+            resultType="hashMap">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+    </select>
+
+    <select id="take_power.select.list" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+            resultType="com.iscas.component.services.take_power.bean.TakePower">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+    </select>
+
+    <insert id="take_power.insert" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into take_power
+        (id,createtime
+        <if test="deviceName!=null and deviceName!=''">
+            ,deviceName
+        </if>
+        <if test="macId!=null and macId!=''">
+            ,macId
+        </if>
+        <if test="cardId!=null and cardId!=''">
+            ,cardId
+        </if>
+        <if test="startTime!=null and startTime!=''">
+            ,startTime
+        </if>
+        <if test="endTime!=null and endTime!=''">
+            ,endTime
+        </if>
+        <if test="ext !=null and ext!=''">
+            ,ext
+        </if>
+        <if test="memo !=null and memo!=''">
+            ,memo
+        </if>
+        <if test="hostMac !=null and hostMac!=''">
+            ,hostMac
+        </if>
+        )
+        values
+        (id,now()
+        <if test="deviceName !=null and deviceName !=''">
+            ,#{deviceName}
+        </if>
+        <if test="macId !=null and macId !=''">
+            ,#{macId}
+        </if>
+        <if test="cardId !=null and cardId !=''">
+            ,#{cardId}
+        </if>
+        <if test="startTime !=null and startTime !=''">
+            ,#{startTime}
+        </if>
+        <if test="endTime !=null and endTime !=''">
+            ,#{endTime}
+        </if>
+        <if test="ext !=null and ext !=''">
+            ,#{ext}
+        </if>
+        <if test="memo !=null and memo !=''">
+            ,#{memo}
+        </if>
+        <if test="hostMac !=null and hostMac !=''">
+            ,#{hostMac}
+        </if>
+        )
+    </insert>
+
+    <update id="take_power.updateTopOne" parameterType="com.iscas.component.services.take_power.bean.TakePower">
+             UPDATE take_power SET endTime =#{endTime} WHERE hostMac=#{hostMac} AND macId = #{macId} ORDER BY createTime desc LIMIT 1
+    </update>
+
+
+    <update id="take_power.updateOneFast" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+    >
+UPDATE take_power
+SET endTime = (
+	CASE
+	WHEN endTime IS NULL THEN
+		NOW()
+	ELSE
+		endTime
+	END
+)
+WHERE
+hostMac=#{hostMac}
+AND macId=#{macId}
+/*ORDER BY createTime DESC
+LIMIT 1*/
+    </update>
+
+    <update id="take_power.updateHostAll" parameterType="com.iscas.component.services.take_power.bean.TakePower"
+    >
+        UPDATE take_power
+        SET endTime = (
+        CASE
+        WHEN endTime IS NULL THEN
+        NOW()
+        ELSE
+        endTime
+        END
+        )
+        WHERE
+        deviceName=#{deviceName}
+        /*ORDER BY createTime DESC
+        LIMIT 1*/
+    </update>
+
+</mapper>

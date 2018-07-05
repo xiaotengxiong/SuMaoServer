@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hotel_extension">
+    <select id="hotel_extension.selectPageList"
+            parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension"
+            resultType="com.iscas.component.services.hotel_extension.bean.HotelExtension">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+        limit #{offset},#{pageSize}
+    </select>
+
+    <select id="hotel_extension.selectPageCount"
+            parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension"
+            resultType="com.iscas.component.services.hotel_extension.bean.HotelExtension">
+        select count(*) from (select 1 from sys_test t where 1=1
+        <if test="username!=null and username!=''">
+            and username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and password=#{password}
+        </if>
+        )
+    </select>
+    <select id="hotel_extension.select" parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension"
+            resultType="hashMap">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+    </select>
+
+    <select id="hotel_extension.select.list"
+            parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension"
+            resultType="com.iscas.component.services.hotel_extension.bean.HotelExtension">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+    </select>
+
+    <insert id="hotel_extension.insert" parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into hotel_extension
+        (createTime
+        <if test="deviceName!=null and deviceName!=''">
+            ,deviceName
+        </if>
+        <if test="macId!=null and macId!=''">
+            ,macId
+        </if>
+        <if test="hotelNo!=null and hotelNo!=''">
+            ,hotelNo
+        </if>
+        <if test="hotelName!=null and hotelName!=''">
+            ,hotelName
+        </if>
+        <if test="roomNo!=null and roomNo!=''">
+            ,roomNo
+        </if>
+        <if test="status!=null and status!=''">
+            ,status
+        </if>
+        <if test="region!=null and region!=''">
+            ,region
+        </if>
+        <if test="actionTime!=null and actionTime!=''">
+            ,actionTime
+        </if>
+        <if test="cardId!=null and cardId!=''">
+            ,cardId
+        </if>
+        <if test="subMacId!=null and subMacId!=''">
+            ,subMacId
+        </if>
+        <if test="lngdm!=null and lngdm!=''">
+            ,lngdm
+        </if>
+        <if test="latdm!=null and latdm!=''">
+            ,latdm
+        </if>
+        <if test="delStatus!=null and delStatus!=''">
+            ,delStatus
+        </if>
+        <if test="ext!=null and ext!=''">
+            ,ext
+        </if>
+        <if test="memo!=null and memo!=''">
+            ,memo
+        </if>
+        <if test="hostMac!=null and hostMac!=''">
+            ,hostMac
+        </if>
+
+        )SELECT
+        now()
+        <if test="deviceName !=null and deviceName !=''">
+            ,#{deviceName}
+        </if>
+        <if test="macId !=null and macId !=''">
+            ,#{macId}
+        </if>
+        <if test="hotelNo !=null and hotelNo !=''">
+            ,#{hotelNo}
+        </if>
+        <if test="hotelName !=null and hotelName !=''">
+            ,#{hotelName}
+        </if>
+        <if test="roomNo !=null and roomNo !=''">
+            ,#{roomNo}
+        </if>
+        <if test="status !=null and status !=''">
+            ,#{status}
+        </if>
+        <if test="region !=null and region !=''">
+            ,#{region}
+        </if>
+        <if test="actionTime !=null and actionTime !=''">
+            ,#{actionTime}
+        </if>
+        <if test="cardId !=null and cardId !=''">
+            ,#{cardId}
+        </if>
+        <if test="subMacId !=null and subMacId !=''">
+            ,#{subMacId}
+        </if>
+        <if test="lngdm !=null and lngdm !=''">
+            ,#{lngdm}
+        </if>
+        <if test="latdm !=null and latdm !=''">
+            ,#{latdm}
+        </if>
+        <if test="delStatus !=null and delStatus !=''">
+            ,#{delStatus}
+        </if>
+        <if test="ext !=null and ext !=''">
+            ,#{ext}
+        </if>
+        <if test="memo !=null and memo !=''">
+            ,#{memo}
+        </if>
+        <if test="hostMac !=null and hostMac !=''">
+            ,#{hostMac}
+        </if>
+        FROM
+        DUAL
+        WHERE
+        NOT EXISTS (
+        SELECT
+        *
+        FROM
+        `hotel_extension`
+        WHERE
+        `macId` = #{macId}
+        )
+    </insert>
+
+
+    <select id="hotel_extension.select.one"
+            parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension"
+            resultType="com.iscas.component.services.hotel_extension.bean.HotelExtension">
+        SELECT *
+        FROM hotel_extension t where t.delStatus=1
+        <if test="deviceName !=null and deviceName!=''">
+            and t.deviceName=#{deviceName}
+        </if>
+        <if test="macId!=null and macId!=''">
+            and t.macId=#{macId}
+        </if>
+        <if test="hotelNo!=null and hotelNo!=''">
+            and t.hotelNo=#{hotelNo}
+        </if>
+        <if test="hotelName!=null and hotelName!=''">
+            and t.hotelName= #{hotelName}
+        </if>
+        <if test="roomNo!=null and roomNo!=''">
+            and t.roomNo= #{roomNo}
+        </if>
+        <if test="createTime!=null and createTime!=''">
+            and t.createTime like CONCAT('%',#{createTime},'%')
+        </if>
+        order by id desc
+    </select>
+
+
+    <!-- 修改数据 -->
+    <update id="hotel_extension.updateByDeviceName"
+            parameterType="com.iscas.component.services.hotel_extension.bean.HotelExtension">
+        update hotel_extension
+        set status=#{status},createTime=now()
+        <if test="actionTime!=null and actionTime!=''">
+            ,actionTime=#{actionTime}
+        </if>
+        where 1=1
+        <if test="deviceName!=null and deviceName!=''">
+            and deviceName = #{deviceName}
+        </if>
+        <if test="macId!=null and macId!=''">
+            and macId = #{macId}
+        </if>
+    </update>
+</mapper>

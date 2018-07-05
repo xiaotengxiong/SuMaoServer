@@ -1,0 +1,83 @@
+[INFO ] 2018-01-31 15:26:10,645   main - main start run================
+[INFO ] 2018-01-31 15:26:15,213 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-01-31 15:26:15,589   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-01-31 15:26:17,517   main - {dataSource-1} inited
+[INFO ] 2018-01-31 15:26:19,126   main - 开始实例化缓存对象================
+[INFO ] 2018-01-31 15:53:09,959 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :77ms
+[INFO ] 2018-01-31 15:53:10,041 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-31 15:54:20,888 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :58ms
+[INFO ] 2018-01-31 15:54:20,971 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-31 15:54:21,055 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '862991528261883'
+run time is :56ms
+[INFO ] 2018-01-31 15:54:21,137 pool-1-thread-3 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：862991528261883
+[INFO ] 2018-01-31 15:57:42,210 pool-1-thread-4 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'90a919a4ae30' ,'862991528261883' ,'180131155739' )
+run time is :67ms
+[INFO ] 2018-01-31 15:57:42,210 pool-1-thread-4 - 插入数据成功，DeviceName为：null ,插入的Id 为：1
+[INFO ] 2018-01-31 15:57:56,816 pool-1-thread-5 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155754' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:57:56,901 pool-1-thread-5 - 更新失败null
+[INFO ] 2018-01-31 15:57:58,560 pool-1-thread-6 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155757' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :55ms
+[INFO ] 2018-01-31 15:57:58,645 pool-1-thread-6 - 更新失败null
+[INFO ] 2018-01-31 15:58:00,653 pool-1-thread-7 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155759' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :54ms
+[INFO ] 2018-01-31 15:58:00,741 pool-1-thread-7 - 更新失败null
+[INFO ] 2018-01-31 15:58:01,303 pool-1-thread-8 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155759' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:58:01,389 pool-1-thread-8 - 更新失败null
+[INFO ] 2018-01-31 15:58:02,051 pool-1-thread-9 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155759' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :57ms
+[INFO ] 2018-01-31 15:58:02,135 pool-1-thread-9 - 更新失败null
+[INFO ] 2018-01-31 15:58:03,992 pool-1-thread-10 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155802' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :55ms
+[INFO ] 2018-01-31 15:58:04,077 pool-1-thread-10 - 更新失败null
+[INFO ] 2018-01-31 15:58:07,791 pool-1-thread-1 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155805' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :58ms
+[INFO ] 2018-01-31 15:58:07,885 pool-1-thread-1 - 更新失败null
+[INFO ] 2018-01-31 15:58:08,602 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155807' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:58:08,689 pool-1-thread-2 - 更新失败null
+[INFO ] 2018-01-31 15:58:10,835 pool-1-thread-3 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155809' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :54ms
+[INFO ] 2018-01-31 15:58:10,923 pool-1-thread-3 - 更新失败null
+[INFO ] 2018-01-31 15:58:11,328 pool-1-thread-4 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155809' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :55ms
+[INFO ] 2018-01-31 15:58:11,415 pool-1-thread-4 - 更新失败null
+[INFO ] 2018-01-31 15:58:11,659 pool-1-thread-5 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155810' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:58:11,745 pool-1-thread-5 - 更新失败null
+[INFO ] 2018-01-31 15:58:14,978 pool-1-thread-6 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155812' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :57ms
+[INFO ] 2018-01-31 15:58:15,065 pool-1-thread-6 - 更新失败null
+[INFO ] 2018-01-31 15:58:20,283 pool-1-thread-7 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155818' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :55ms
+[INFO ] 2018-01-31 15:58:20,373 pool-1-thread-7 - 更新失败null
+[INFO ] 2018-01-31 15:58:20,806 pool-1-thread-8 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155819' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:58:20,892 pool-1-thread-8 - 更新失败null
+[INFO ] 2018-01-31 15:58:21,148 pool-1-thread-9 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155819' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :58ms
+[INFO ] 2018-01-31 15:58:21,238 pool-1-thread-9 - 更新失败null
+[INFO ] 2018-01-31 15:58:26,765 pool-1-thread-10 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155824' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :55ms
+[INFO ] 2018-01-31 15:58:26,851 pool-1-thread-10 - 更新失败null
+[INFO ] 2018-01-31 15:58:27,168 pool-1-thread-1 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155825' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:58:27,253 pool-1-thread-1 - 更新失败null
+[INFO ] 2018-01-31 15:58:27,531 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155825' WHERE deviceName= 'e87645a4ae30' AND macId = '90a919a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :55ms
+[INFO ] 2018-01-31 15:58:27,616 pool-1-thread-2 - 更新失败null
+[INFO ] 2018-01-31 15:59:32,430 pool-1-thread-3 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'f81320a4ae30' ,'862991528261883' ,'180131155930' )
+run time is :61ms
+[INFO ] 2018-01-31 15:59:32,431 pool-1-thread-3 - 插入数据成功，DeviceName为：null ,插入的Id 为：2
+[INFO ] 2018-01-31 15:59:48,031 pool-1-thread-4 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='180131155946' WHERE deviceName= 'e87645a4ae30' AND macId = 'f81320a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-01-31 15:59:48,116 pool-1-thread-4 - 更新失败null
+[INFO ] 2018-01-31 16:01:35,402 pool-1-thread-5 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'f81320a4ae30' ,'862991528261883' ,'180131160133' )
+run time is :62ms
+[INFO ] 2018-01-31 16:01:35,402 pool-1-thread-5 - 插入数据成功，DeviceName为：null ,插入的Id 为：3
+[INFO ] 2018-01-31 16:01:41,836 pool-1-thread-6 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ) values (id,now() ,'e87645a4ae30' ,'f81320a4ae30' ,'862991528261883' ,'180131160139' )
+run time is :72ms
+[INFO ] 2018-01-31 16:01:41,837 pool-1-thread-6 - 插入数据成功，DeviceName为：null ,插入的Id 为：4

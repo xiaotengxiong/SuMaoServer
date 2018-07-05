@@ -1,0 +1,397 @@
+[INFO ] 2018-03-23 14:33:16,696   main - main start run================
+[INFO ] 2018-03-23 14:33:20,390 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 14:33:20,841   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 14:33:22,946   main - {dataSource-1} inited
+[INFO ] 2018-03-23 14:33:24,818   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 14:33:29,180 pool-1-thread-2 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.92' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 11:00:47.323' )
+run time is :134ms
+[INFO ] 2018-03-23 14:33:29,268 pool-1-thread-3 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.92' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 01:36:17.807' )
+run time is :66ms
+[INFO ] 2018-03-23 14:33:29,284 pool-1-thread-7 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 13:37:31.437' )
+run time is :90ms
+[INFO ] 2018-03-23 14:33:29,371 pool-1-thread-4 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.92' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 11:05:55.921' )
+run time is :67ms
+[INFO ] 2018-03-23 14:33:29,390 pool-1-thread-6 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.254.45' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 11:10:33.325' )
+run time is :77ms
+[INFO ] 2018-03-23 14:33:29,436 pool-1-thread-1 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 01:36:17.820' )
+run time is :62ms
+[INFO ] 2018-03-23 14:33:29,469 pool-1-thread-5 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.254.53' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 13:37:31.417' )
+run time is :77ms
+[INFO ] 2018-03-23 14:33:29,510 pool-1-thread-8 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 13:43:43' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :64ms
+[INFO ] 2018-03-23 14:33:29,510 pool-1-thread-8 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:29,641 pool-1-thread-10 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 13:47:09' ,'c03512a4ae30' )
+run time is :148ms
+[INFO ] 2018-03-23 14:33:29,642 pool-1-thread-10 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：27
+[INFO ] 2018-03-23 14:33:29,897 pool-1-thread-9 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 13:43:44' ,'c03512a4ae30' )
+run time is :297ms
+[INFO ] 2018-03-23 14:33:29,907 pool-1-thread-9 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：28
+[INFO ] 2018-03-23 14:33:30,141 pool-1-thread-8 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 13:47:01' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :64ms
+[INFO ] 2018-03-23 14:33:30,141 pool-1-thread-8 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:30,592 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :70ms
+[INFO ] 2018-03-23 14:33:30,626 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :76ms
+[INFO ] 2018-03-23 14:33:30,700 pool-1-thread-2 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:30,772 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :152ms
+[INFO ] 2018-03-23 14:33:30,772 pool-1-thread-7 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:30,892 pool-1-thread-6 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :71ms
+[INFO ] 2018-03-23 14:33:30,897 pool-1-thread-4 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:31,001 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :145ms
+[INFO ] 2018-03-23 14:33:31,067 pool-1-thread-6 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:31,151 pool-1-thread-1 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:31,213 pool-1-thread-5 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :168ms
+[INFO ] 2018-03-23 14:33:31,286 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :72ms
+[INFO ] 2018-03-23 14:33:31,308 pool-1-thread-10 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 13:47:31' WHERE deviceName= '868575021928074' AND macId = 'a82012a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-03-23 14:33:31,336 pool-1-thread-5 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:31,447 pool-1-thread-3 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:33:31,506 pool-1-thread-10 - 更新失败
+[INFO ] 2018-03-23 14:33:31,588 pool-1-thread-9 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 13:47:01' ,'c03512a4ae30' )
+run time is :174ms
+[INFO ] 2018-03-23 14:33:31,588 pool-1-thread-8 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 13:53:38' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :167ms
+[INFO ] 2018-03-23 14:33:31,589 pool-1-thread-9 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：29
+[INFO ] 2018-03-23 14:33:31,660 pool-1-thread-8 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:31,790 pool-1-thread-7 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:05:58' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :82ms
+[INFO ] 2018-03-23 14:33:31,790 pool-1-thread-7 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:31,848 pool-1-thread-2 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 13:47:08' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :99ms
+[INFO ] 2018-03-23 14:33:31,849 pool-1-thread-6 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:07:16' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :133ms
+[INFO ] 2018-03-23 14:33:31,849 pool-1-thread-4 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 13:50:00' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :108ms
+[INFO ] 2018-03-23 14:33:31,849 pool-1-thread-2 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:31,914 pool-1-thread-6 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:31,917 pool-1-thread-4 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:32,105 pool-1-thread-10 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='null',createTime=now() ,actionTime='180323142543' where 1=1 and deviceName = '868575021928074' and macId = 'null'
+run time is :69ms
+[INFO ] 2018-03-23 14:33:32,138 pool-1-thread-1 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 13:53:35' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :222ms
+[INFO ] 2018-03-23 14:33:32,139 pool-1-thread-1 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:32,177 pool-1-thread-3 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:25:30' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :139ms
+[INFO ] 2018-03-23 14:33:32,177 pool-1-thread-3 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:32,227 pool-1-thread-5 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:19:09' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :182ms
+[INFO ] 2018-03-23 14:33:32,227 pool-1-thread-5 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:33:32,299 pool-1-thread-10 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 14:35:02,659 pool-1-thread-9 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='null',createTime=now() ,actionTime='180323143504' where 1=1 and deviceName = '868575021928074' and macId = 'null'
+run time is :70ms
+[INFO ] 2018-03-23 14:35:02,762 pool-1-thread-9 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 14:40:22,179 pool-1-thread-8 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 14:40:24.562' )
+run time is :73ms
+[INFO ] 2018-03-23 14:40:22,257 pool-1-thread-7 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.254.242' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 14:40:24.545' )
+run time is :77ms
+[INFO ] 2018-03-23 14:40:22,365 pool-1-thread-8 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :73ms
+[INFO ] 2018-03-23 14:40:22,479 pool-1-thread-8 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:40:22,680 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :73ms
+[INFO ] 2018-03-23 14:40:22,799 pool-1-thread-7 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:40:57,402 pool-1-thread-2 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:40:46' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :73ms
+[INFO ] 2018-03-23 14:40:57,402 pool-1-thread-2 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:40:57,569 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='null',createTime=now() ,actionTime='180323144054' where 1=1 and deviceName = '868575021928074' and macId = 'null'
+run time is :69ms
+[INFO ] 2018-03-23 14:41:12,789   main - main start run================
+[INFO ] 2018-03-23 14:41:14,848 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 14:41:15,290   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 14:41:17,017   main - {dataSource-1} inited
+[INFO ] 2018-03-23 14:41:18,081   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 14:42:45,498 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0.0',createTime=now() ,actionTime='2018-03-23 14:42:04' where 1=1 and deviceName = '868575021928074' and macId = 'null'
+run time is :123ms
+[INFO ] 2018-03-23 14:43:43,343 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 14:43:50,397   main - main start run================
+[INFO ] 2018-03-23 14:43:52,042 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 14:43:52,597   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 14:43:54,458   main - {dataSource-1} inited
+[INFO ] 2018-03-23 14:43:55,086   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 14:44:45,792 pool-1-thread-1 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:43:19' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :102ms
+[INFO ] 2018-03-23 14:44:45,793 pool-1-thread-1 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:47:28,302   main - main start run================
+[INFO ] 2018-03-23 14:47:29,626 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 14:47:29,930   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 14:47:31,541   main - {dataSource-1} inited
+[INFO ] 2018-03-23 14:47:32,125   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 14:47:50,947 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 14:46:44' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :2748ms
+[INFO ] 2018-03-23 14:47:51,056 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 14:47:51,295 pool-1-thread-1 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:46:36' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :110ms
+[INFO ] 2018-03-23 14:47:52,830 pool-1-thread-1 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 14:48:24,014   main - main start run================
+[INFO ] 2018-03-23 14:48:25,664 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 14:48:26,104   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 14:48:27,717   main - {dataSource-1} inited
+[INFO ] 2018-03-23 14:48:28,345   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 14:48:29,983 pool-1-thread-1 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.32' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 14:48:27.250' )
+run time is :388ms
+[INFO ] 2018-03-23 14:48:30,028 pool-1-thread-2 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 14:48:27.261' )
+run time is :63ms
+[INFO ] 2018-03-23 14:48:30,112 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :56ms
+[INFO ] 2018-03-23 14:48:30,146 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :105ms
+[INFO ] 2018-03-23 14:48:30,200 pool-1-thread-2 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:48:30,313 pool-1-thread-1 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:51:06,588 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0.0',createTime=now() ,actionTime='2018-03-23 14:50:15' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :90ms
+[INFO ] 2018-03-23 14:52:09,779 pool-1-thread-3 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 14:55:47,380   main - main start run================
+[INFO ] 2018-03-23 14:55:49,141 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 14:55:49,478   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 14:55:51,091   main - {dataSource-1} inited
+[INFO ] 2018-03-23 14:55:51,859   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 14:55:53,674 pool-1-thread-2 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.133' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 14:55:38.429' )
+run time is :123ms
+[INFO ] 2018-03-23 14:55:53,817 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :86ms
+[INFO ] 2018-03-23 14:55:53,937 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:55:56,464 pool-1-thread-1 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 14:55:38.443' )
+run time is :96ms
+[INFO ] 2018-03-23 14:55:56,586 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :80ms
+[INFO ] 2018-03-23 14:55:56,704 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:56:11,473 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 14:56:05' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :86ms
+[INFO ] 2018-03-23 14:56:12,390 pool-1-thread-3 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 14:57:38,925 pool-1-thread-4 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 14:57:41.278' )
+run time is :94ms
+[INFO ] 2018-03-23 14:57:39,014 pool-1-thread-5 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.126' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 14:57:41.267' )
+run time is :86ms
+[INFO ] 2018-03-23 14:57:39,133 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :78ms
+[INFO ] 2018-03-23 14:57:39,249 pool-1-thread-4 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：868575021928074
+[INFO ] 2018-03-23 14:57:39,378 pool-1-thread-5 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :57ms
+[INFO ] 2018-03-23 14:57:39,463 pool-1-thread-5 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:00:48,256 pool-1-thread-6 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:58:04' ,'00000000' ,'0' ,'0' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :67ms
+[INFO ] 2018-03-23 15:00:48,256 pool-1-thread-6 - 注册成功,HostMac 为：ae300�, 分机macId：ae30c03512a4
+[INFO ] 2018-03-23 15:00:53,450   main - main start run================
+[INFO ] 2018-03-23 15:00:55,009 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 15:00:55,387   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 15:00:57,012   main - {dataSource-1} inited
+[INFO ] 2018-03-23 15:00:57,758   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 15:01:23,922 pool-1-thread-2 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:58:31' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :176ms
+[INFO ] 2018-03-23 15:01:23,923 pool-1-thread-2 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:01:24,171 pool-1-thread-1 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 14:58:22' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :106ms
+[INFO ] 2018-03-23 15:04:33,478 pool-1-thread-1 - 解析出现异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:19:41,940   main - main start run================
+[INFO ] 2018-03-23 15:19:43,776 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 15:19:44,187   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 15:19:46,189   main - {dataSource-1} inited
+[INFO ] 2018-03-23 15:19:48,098   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 15:19:50,577 pool-1-thread-1 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 15:05:42.829' )
+run time is :108ms
+[INFO ] 2018-03-23 15:19:50,771 pool-1-thread-3 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.254.104' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 15:05:42.817' )
+run time is :183ms
+[INFO ] 2018-03-23 15:20:02,359 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :11425ms
+[INFO ] 2018-03-23 15:20:05,735 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:20:18,191 pool-1-thread-4 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 15:07:40.046' )
+run time is :1701ms
+[INFO ] 2018-03-23 15:20:21,249 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :3023ms
+[INFO ] 2018-03-23 15:20:22,316 pool-1-thread-3 - 更新酒店房间状态成功，更新条数为：1 ,DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:20:22,958 pool-1-thread-7 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.254.185' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 15:07:40.040' )
+run time is :568ms
+[INFO ] 2018-03-23 15:20:22,972 pool-1-thread-6 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 15:09:02' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :1196ms
+[INFO ] 2018-03-23 15:20:22,972 pool-1-thread-6 - 注册成功,HostMac 为：ae300�, 分机macId：ae30c03512a4
+[INFO ] 2018-03-23 15:20:23,059 pool-1-thread-2 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 15:06:13' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :98ms
+[INFO ] 2018-03-23 15:20:23,060 pool-1-thread-2 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:20:23,316 pool-1-thread-5 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 15:05:55' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :192ms
+[INFO ] 2018-03-23 15:20:23,355 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :238ms
+[INFO ] 2018-03-23 15:20:23,355 pool-1-thread-5 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:20:23,533 pool-1-thread-4 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:20:24,525 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 15:20:04' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :57ms
+[INFO ] 2018-03-23 15:20:24,556 pool-1-thread-10 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.61' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 15:18:14.333' )
+run time is :1056ms
+[INFO ] 2018-03-23 15:20:24,567 pool-1-thread-9 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 15:10:06' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :68ms
+[INFO ] 2018-03-23 15:20:24,611 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 15:20:24,687 pool-1-thread-9 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 15:20:24,718 pool-1-thread-8 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 15:07:54' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :151ms
+[INFO ] 2018-03-23 15:20:24,718 pool-1-thread-8 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:20:24,762 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :80ms
+[INFO ] 2018-03-23 15:20:24,843 pool-1-thread-3 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 15:18:14.352' )
+run time is :74ms
+[INFO ] 2018-03-23 15:20:24,850 pool-1-thread-7 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:20:24,901 pool-1-thread-6 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 15:19:08' ,'00000000' ,'0' ,'0' ,'ae300�' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :134ms
+[INFO ] 2018-03-23 15:20:24,901 pool-1-thread-6 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:20:24,993 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :92ms
+[INFO ] 2018-03-23 15:20:25,028 pool-1-thread-10 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :127ms
+[INFO ] 2018-03-23 15:20:25,081 pool-1-thread-3 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:20:25,146 pool-1-thread-10 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:21:51,314 pool-1-thread-5 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 15:21:53.289' )
+run time is :60ms
+[INFO ] 2018-03-23 15:21:51,316 pool-1-thread-2 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.55' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 15:21:53.269' )
+run time is :75ms
+[INFO ] 2018-03-23 15:21:51,404 pool-1-thread-5 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :62ms
+[INFO ] 2018-03-23 15:21:51,441 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :91ms
+[INFO ] 2018-03-23 15:21:51,494 pool-1-thread-5 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:21:51,598 pool-1-thread-2 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:22:41,525 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0.0',createTime=now() ,actionTime='2018-03-23 15:22:25' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :68ms
+[INFO ] 2018-03-23 15:22:41,627 pool-1-thread-4 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 15:23:32,599 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 15:23:35' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :68ms
+[INFO ] 2018-03-23 15:23:32,698 pool-1-thread-1 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 15:23:56,393 pool-1-thread-9 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 15:23:58' ,'c03512a4ae30' )
+run time is :73ms
+[INFO ] 2018-03-23 15:23:56,393 pool-1-thread-9 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：30
+[INFO ] 2018-03-23 15:24:13,106 pool-1-thread-8 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 15:24:15' WHERE deviceName= '868575021928074' AND macId = 'a82012a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :68ms
+[INFO ] 2018-03-23 15:24:13,210 pool-1-thread-8 - 更新失败
+[INFO ] 2018-03-23 15:27:58,084 pool-1-thread-7 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.254.14' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 15:28:00.435' )
+run time is :73ms
+[INFO ] 2018-03-23 15:27:58,186 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :68ms
+[INFO ] 2018-03-23 15:27:58,289 pool-1-thread-7 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 15:28:16,070 pool-1-thread-6 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 15:28:09' ,'00000000' ,'0' ,'0' ,'c03512a4ae30' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :79ms
+[INFO ] 2018-03-23 15:28:16,070 pool-1-thread-6 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 15:29:13,398 pool-1-thread-3 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 15:29:13' ,'c03512a4ae30' )
+run time is :75ms
+[INFO ] 2018-03-23 15:29:13,398 pool-1-thread-3 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：31
+[INFO ] 2018-03-23 15:29:28,499 pool-1-thread-10 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 15:29:29' WHERE deviceName= '868575021928074' AND macId = 'a82012a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :67ms
+[INFO ] 2018-03-23 15:29:28,604 pool-1-thread-10 - 更新失败
+[INFO ] 2018-03-23 15:29:35,930 pool-1-thread-5 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 15:29:37' ,'c03512a4ae30' )
+run time is :76ms
+[INFO ] 2018-03-23 15:29:35,930 pool-1-thread-5 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：32
+[INFO ] 2018-03-23 15:30:34,023 pool-1-thread-2 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0.0',createTime=now() ,actionTime='2018-03-23 15:30:35' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :68ms
+[INFO ] 2018-03-23 15:30:34,122 pool-1-thread-2 - 更新酒店房间状态成功，更新条数为：1 ,hostMac 为：null
+[INFO ] 2018-03-23 16:19:56,850   main - main start run================
+[INFO ] 2018-03-23 16:19:58,785 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 16:19:59,244   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 16:20:01,159   main - {dataSource-1} inited
+[INFO ] 2018-03-23 16:20:01,831   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 16:20:09,902 pool-1-thread-1 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 16:20:05' ,'00000000' ,'0' ,'0' ,'c03512a4ae30' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :106ms
+[INFO ] 2018-03-23 16:20:09,902 pool-1-thread-1 - 注册成功,HostMac 为：c03512a4ae30, 分机macId：ae30c03512a4
+[INFO ] 2018-03-23 16:20:28,598 pool-1-thread-2 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 16:20:29' ,'c03512a4ae30' )
+run time is :79ms
+[INFO ] 2018-03-23 16:20:28,599 pool-1-thread-2 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：36
+[INFO ] 2018-03-23 16:20:45,657 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 16:20:47' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :68ms
+[INFO ] 2018-03-23 16:20:45,865 pool-1-thread-3 - method type : update, source sql : take_power.updateOneFast:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE hostMac='c03512a4ae30' AND macId='a82012a4ae30' ORDER BY createTime DESC LIMIT 1
+run time is :69ms
+[INFO ] 2018-03-23 16:20:54,394 pool-1-thread-4 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 16:20:56' WHERE deviceName= '868575021928074' AND macId = 'a82012a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :71ms
+[INFO ] 2018-03-23 16:20:54,503 pool-1-thread-4 - 更新失败
+[INFO ] 2018-03-23 16:21:25,495 pool-1-thread-5 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 16:21:27' ,'c03512a4ae30' )
+run time is :77ms
+[INFO ] 2018-03-23 16:21:25,496 pool-1-thread-5 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：37
+[INFO ] 2018-03-23 16:28:02,580 pool-1-thread-6 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0.0',createTime=now() ,actionTime='2018-03-23 16:27:47' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :74ms
+[INFO ] 2018-03-23 16:28:09,678 pool-1-thread-6 - method type : update, source sql : take_power.updateOneFast:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE hostMac='c03512a4ae30' AND macId='a82012a4ae30' ORDER BY createTime DESC LIMIT 1
+run time is :314ms
+[INFO ] 2018-03-23 16:28:51,294 pool-1-thread-7 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 16:28:52' ,'00000000' ,'0' ,'0' ,'c03512a4ae30' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :77ms
+[INFO ] 2018-03-23 16:28:51,294 pool-1-thread-7 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 16:28:51,795 pool-1-thread-8 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 16:28:53' ,'c03512a4ae30' )
+run time is :77ms
+[INFO ] 2018-03-23 16:28:51,795 pool-1-thread-8 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：39
+[INFO ] 2018-03-23 16:29:07,176 pool-1-thread-9 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 16:29:08' WHERE deviceName= '868575021928074' AND macId = 'a82012a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :70ms
+[INFO ] 2018-03-23 16:29:07,281 pool-1-thread-9 - 更新失败
+[INFO ] 2018-03-23 16:30:06,366 pool-1-thread-10 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 16:30:07' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :69ms
+[INFO ] 2018-03-23 16:30:06,570 pool-1-thread-10 - method type : update, source sql : take_power.updateOneFast:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE hostMac='c03512a4ae30' AND macId='a82012a4ae30' ORDER BY createTime DESC LIMIT 1
+run time is :68ms
+[INFO ] 2018-03-23 16:41:40,902   main - main start run================
+[INFO ] 2018-03-23 16:41:42,527 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 16:41:42,968   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 16:41:44,617   main - {dataSource-1} inited
+[INFO ] 2018-03-23 16:41:45,433   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 16:47:37,217 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0.0',createTime=now() ,actionTime='2018-03-23 16:47:38' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :79ms
+[INFO ] 2018-03-23 16:47:37,398 pool-1-thread-1 - method type : update, source sql : take_power.updateOneFast:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE hostMac='c03512a4ae30' AND macId='a82012a4ae30' /*ORDER BY createTime DESC LIMIT 1*/
+run time is :59ms
+[INFO ] 2018-03-23 16:49:11,491 pool-1-thread-2 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 16:49:04' ,'00000000' ,'0' ,'0' ,'c03512a4ae30' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :68ms
+[INFO ] 2018-03-23 16:49:11,492 pool-1-thread-2 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 16:49:57,631 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 16:49:58' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :58ms
+[INFO ] 2018-03-23 16:49:57,804 pool-1-thread-3 - method type : update, source sql : take_power.updateOneFast:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE hostMac='c03512a4ae30' AND macId='a82012a4ae30' /*ORDER BY createTime DESC LIMIT 1*/
+run time is :57ms
+[INFO ] 2018-03-23 16:50:51,169 pool-1-thread-4 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 16:50:47' ,'c03512a4ae30' )
+run time is :69ms
+[INFO ] 2018-03-23 16:50:51,169 pool-1-thread-4 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：40
+[INFO ] 2018-03-23 16:52:25,840 pool-1-thread-5 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 16:52:27' WHERE hostMac= AND macId = 'a82012a4ae30' /*ORDER BY createTime desc LIMIT 1*/
+run time is :59ms
+[INFO ] 2018-03-23 16:52:25,923 pool-1-thread-5 - 更新成功 ,更新ID：1
+[INFO ] 2018-03-23 16:54:54,711   main - main start run================
+[INFO ] 2018-03-23 16:54:56,678 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 16:54:57,150   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 16:54:58,930   main - {dataSource-1} inited
+[INFO ] 2018-03-23 16:54:59,686   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 16:55:15,438 pool-1-thread-1 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 16:55:16' ,'c03512a4ae30' )
+run time is :123ms
+[INFO ] 2018-03-23 16:55:15,438 pool-1-thread-1 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：41
+[INFO ] 2018-03-23 16:55:31,495 pool-1-thread-2 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 16:55:33' WHERE hostMac='c03512a4ae30' AND macId = 'a82012a4ae30' /*ORDER BY createTime desc LIMIT 1*/
+run time is :88ms
+[INFO ] 2018-03-23 16:55:31,875 pool-1-thread-2 - 更新成功 ,更新ID：1
+[INFO ] 2018-03-23 17:00:33,923 pool-1-thread-3 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 17:00:36.182' )
+run time is :93ms
+[INFO ] 2018-03-23 17:00:34,058 pool-1-thread-3 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :84ms
+[INFO ] 2018-03-23 17:00:34,186 pool-1-thread-3 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 17:01:11,798   main - main start run================
+[INFO ] 2018-03-23 17:01:13,662 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2018-03-23 17:01:14,054   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2018-03-23 17:01:15,853   main - {dataSource-1} inited
+[INFO ] 2018-03-23 17:01:16,461   main - 开始实例化缓存对象================
+[INFO ] 2018-03-23 17:02:27,577 pool-1-thread-1 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,clientIp ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'223.104.255.246' ,'BjPoNlKQZ69' ,'868575021928074' ,'online' ,'2018-03-23 17:02:29.657' )
+run time is :95ms
+[INFO ] 2018-03-23 17:02:27,682 pool-1-thread-1 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :60ms
+[INFO ] 2018-03-23 17:02:27,769 pool-1-thread-1 - 更新失败DeviceName 为：868575021928074
+[INFO ] 2018-03-23 17:02:46,494 pool-1-thread-2 - method type : update, source sql : hotel_extension.insert:insert into hotel_extension (createTime ,deviceName ,macId ,actionTime ,cardId ,lngdm ,latdm ,hostMac )SELECT now() ,'868575021928074' ,'ae30c03512a4' ,'2018-03-23 17:02:48' ,'00000000' ,'0' ,'0' ,'c03512a4ae30' FROM DUAL WHERE NOT EXISTS ( SELECT * FROM `hotel_extension` WHERE `macId` = 'ae30c03512a4' )
+run time is :66ms
+[INFO ] 2018-03-23 17:02:46,495 pool-1-thread-2 - 数据处理异常====================：org.apache.ibatis.exceptions.IbatisException
+[INFO ] 2018-03-23 17:02:57,579 pool-1-thread-3 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 17:02:58' ,'c03512a4ae30' )
+run time is :62ms
+[INFO ] 2018-03-23 17:02:57,579 pool-1-thread-3 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：42
+[INFO ] 2018-03-23 17:03:05,095 pool-1-thread-4 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='1.0',createTime=now() ,actionTime='2018-03-23 17:03:06' where 1=1 and deviceName = '868575021928074' and macId = 'a82012a4ae30'
+run time is :56ms
+[INFO ] 2018-03-23 17:03:05,264 pool-1-thread-4 - method type : update, source sql : take_power.updateOneFast:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE hostMac='c03512a4ae30' AND macId='a82012a4ae30' /*ORDER BY createTime DESC LIMIT 1*/
+run time is :56ms
+[INFO ] 2018-03-23 17:03:17,969 pool-1-thread-5 - method type : update, source sql : take_power.updateTopOne:UPDATE take_power SET endTime ='2018-03-23 17:03:19' WHERE hostMac='c03512a4ae30' AND macId = 'a82012a4ae30' ORDER BY createTime desc LIMIT 1
+run time is :56ms
+[INFO ] 2018-03-23 17:03:18,058 pool-1-thread-5 - 更新失败
+[INFO ] 2018-03-23 17:03:24,231 pool-1-thread-6 - method type : update, source sql : take_power.insert:insert into take_power (id,createtime ,deviceName ,macId ,cardId ,startTime ,hostMac ) values (id,now() ,'868575021928074' ,'a82012a4ae30' ,'a5035f7e' ,'2018-03-23 17:03:26' ,'c03512a4ae30' )
+run time is :62ms
+[INFO ] 2018-03-23 17:03:24,232 pool-1-thread-6 - 插入数据成功，HostMac为：c03512a4ae30 ,插入的Id 为：43
+[INFO ] 2018-03-23 17:08:47,770 pool-1-thread-7 - method type : update, source sql : take_power.updateHostAll:UPDATE take_power SET endTime = ( CASE WHEN endTime IS NULL THEN NOW() ELSE endTime END ) WHERE deviceName='868575021928074' /*ORDER BY createTime DESC LIMIT 1*/
+run time is :58ms
+[INFO ] 2018-03-23 17:08:55,931 pool-1-thread-7 - method type : update, source sql : host_computer.insert:insert into host_computer (id,createTime ,productKey ,deviceName ,status ,actionTime ) values (id,now() ,'BjPoNlKQZ69' ,'868575021928074' ,'offline' ,'2018-03-23 17:08:28.846' )
+run time is :69ms
+[INFO ] 2018-03-23 17:08:56,018 pool-1-thread-7 - method type : update, source sql : hotel_extension.updateByDeviceName:update hotel_extension set status='0',createTime=now() where 1=1 and deviceName = '868575021928074'
+run time is :57ms
+[INFO ] 2018-03-23 17:08:56,106 pool-1-thread-7 - 更新失败DeviceName 为：868575021928074

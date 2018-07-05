@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="host_computer">
+    <select id="host_computer.selectPageList"
+            parameterType="com.iscas.component.services.host_computer.bean.HostComputer"
+            resultType="com.iscas.component.services.host_computer.bean.HostComputer">
+        SELECT *
+        FROM host_computer t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+        limit #{offset},#{pageSize}
+    </select>
+
+    <select id="host_computer.selectPageCount"
+            parameterType="com.iscas.component.services.host_computer.bean.HostComputer"
+            resultType="com.iscas.component.services.host_computer.bean.HostComputer">
+        select count(*) from (select 1 from sys_test t where 1=1
+        <if test="username!=null and username!=''">
+            and username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and password=#{password}
+        </if>
+        )
+    </select>
+    <select id="host_computer.select" parameterType="com.iscas.component.services.host_computer.bean.HostComputer"
+            resultType="hashMap">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+    </select>
+
+    <select id="host_computer.select.list" parameterType="com.iscas.component.services.host_computer.bean.HostComputer"
+            resultType="com.iscas.component.services.host_computer.bean.HostComputer">
+        SELECT *
+        FROM sys_test t where 1=1
+        <if test="id!=null and id!=''">
+            and t.id=#{id}
+        </if>
+        <if test="username!=null and username!=''">
+            and t.username=#{username}
+        </if>
+        <if test="password!=null and password!=''">
+            and t.password=#{password}
+        </if>
+        <if test="status!=null and status!=''">
+            and t.status= #{status}
+        </if>
+        order by id desc
+    </select>
+    <insert id="host_computer.insert" parameterType="com.iscas.component.services.host_computer.bean.HostComputer"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into host_computer
+        (id,createTime
+        <if test="lastTime!=null and lastTime!=''">
+            ,lastTime
+        </if>
+        <if test="clientIp!=null and clientIp!=''">
+            ,clientIp
+        </if>
+        <if test="time!=null and time!=''">
+            ,time
+        </if>
+        <if test="productKey!=null and productKey!=''">
+            ,productKey
+        </if>
+        <if test="deviceName!=null and deviceName!=''">
+            ,deviceName
+        </if>
+        <if test="status !=null and status!=''">
+            ,status
+        </if>
+        <if test="actionTime !=null and actionTime!=''">
+            ,actionTime
+        </if>
+        )
+        values
+        (id,now()
+        <if test="lastTime !=null and lastTime !=''">
+            ,#{lastTime}
+        </if>
+        <if test="clientIp !=null and clientIp !=''">
+            ,#{clientIp}
+        </if>
+        <if test="time !=null and time !=''">
+            ,#{time}
+        </if>
+        <if test="productKey !=null and productKey !=''">
+            ,#{productKey}
+        </if>
+        <if test="deviceName !=null and deviceName !=''">
+            ,#{deviceName}
+        </if>
+        <if test="status !=null and status !=''">
+            ,#{status}
+        </if>
+        <if test="actionTime !=null and actionTime !=''">
+            ,#{actionTime}
+        </if>
+        )
+    </insert>
+
+
+    <update id="host_computer.updateTopOne"
+            parameterType="com.iscas.component.services.host_computer.bean.HostComputer">
+    </update>
+</mapper>

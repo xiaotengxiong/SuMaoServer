@@ -1,0 +1,5 @@
+[INFO ] 2017-12-04 16:01:39,183   main - main start run================
+[INFO ] 2017-12-04 16:01:41,769 MLog-Init-Reporter - MLog clients using slf4j logging.
+[INFO ] 2017-12-04 16:01:42,188   main - Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+[INFO ] 2017-12-04 16:01:43,502   main - {dataSource-1} inited
+[INFO ] 2017-12-04 16:01:44,811   main - 开始实例化缓存对象================
